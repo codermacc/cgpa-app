@@ -1,0 +1,164 @@
+/* ============================================
+   ONBOARDING CSS
+   ============================================ */
+
+.onboarding-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+/* ── Slide Indicator ── */
+.onboarding-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) var(--page-padding) var(--space-4);
+}
+
+.progress-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.progress-dot {
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-gray-200);
+  transition: all 0.3s ease;
+  width: 20px;
+}
+.progress-dot.active {
+  background: var(--color-primary);
+  width: 32px;
+}
+.progress-dot.done { background: var(--color-primary-lighter); }
+
+.skip-btn {
+  background: none;
+  border: none;
+  color: var(--color-gray-400);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-2);
+}
+
+/* ── Slide Content ── */
+.onboarding-slide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4) var(--page-padding);
+}
+
+.illustration-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) 0;
+}
+
+.illustration-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--color-primary-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.illustration-icon {
+  color: var(--color-primary);
+}
+
+/* Floating cards in illustration */
+.float-card {
+  position: absolute;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+  box-shadow: var(--shadow-lg);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+}
+.float-card.top-right { top: 8px; right: -12px; color: var(--color-primary); }
+.float-card.bottom-left { bottom: 16px; left: -16px; color: var(--color-info); }
+
+.slide-text {
+  padding: var(--space-4) 0;
+}
+
+.slide-eyebrow {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+
+.slide-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.slide-title span { color: var(--color-primary); }
+
+.slide-desc {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ── Onboarding Footer ── */
+.onboarding-footer {
+  padding: var(--space-4) var(--page-padding) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ── Profile Setup Form ── */
+.profile-setup-form {
+  padding: var(--space-4) var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.profile-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6) 0;
+}
+
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-primary-bg);
+  border: 3px solid var(--color-primary-lighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.avatar-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+}
