@@ -29,8 +29,7 @@ export function renderProfile(container) {
         </svg>
         Edit
         </button>
-      <button class="btn btn-icon btn-settings"
-      id="settings-btn" aria-label="Settings">
+      <button class="btn btn-icon btn-settings" id="settings-btn" aria-label="Settings">
       <img src="/public/Settings.svg" alt="Settings"/>
       </button>
       </div>
