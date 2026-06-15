@@ -69,7 +69,7 @@ export function renderDashboard(container) {
   </div>
 
   <div class="cgpa-badge">
-  <button href="#/history" class="view-details-btn"> View Details </button>
+  <button href="#/history" class="view-details-btn" onclick="window.location.hash='#/history'"> View Details </button>
       <div class="cap-ring" aria-hidden="true">
       <img src="/public/Cap.svg" alt="Graduation Cap"/>
     </div>
@@ -210,8 +210,8 @@ export function renderDashboard(container) {
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)">
           <div class="stat-card-dashboard">
             <p class="stat-card-label">Best Semester</p>
-            <p class="stat-card-value" style="font-size:var(--font-size-base)">${insights.bestSemester?.semester} ${insights.bestSemester?.year}</p>
-            <p style="font-size:var(--font-size-sm);color:var(--color-primary);font-weight:600">GPA: ${insights.bestSemester?.gpa?.toFixed(2)}</p>
+            <p class="stat-card-value" style="font-size:var(--font-size-xm)">${insights.bestSemester?.semester} ${insights.bestSemester?.year}</p>
+            <p style="font-size:var(--font-size-xs);color:var(--color-primary);font-weight:600">GPA: ${insights.bestSemester?.gpa?.toFixed(2)}</p>
           </div>
           <div class="stat-card-dashboard">
             <p class="stat-card-label">Average GPA</p>
