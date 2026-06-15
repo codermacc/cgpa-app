@@ -14,15 +14,7 @@ const SLIDES = [
     desc: 'Monitor your GPA, manage semesters, and stay on top of your academic performance in one place.',
     illustration: `
       <div class="illustration-circle">
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" class="illustration-icon">
-          <rect x="15" y="25" width="70" height="55" rx="8" fill="#bbf7d0"/>
-          <rect x="25" y="35" width="50" height="8" rx="3" fill="#16a34a"/>
-          <rect x="25" y="48" width="35" height="5" rx="2" fill="#86efac"/>
-          <rect x="25" y="57" width="25" height="5" rx="2" fill="#86efac"/>
-          <rect x="25" y="66" width="30" height="5" rx="2" fill="#86efac"/>
-          <circle cx="72" cy="28" r="14" fill="#16a34a"/>
-          <path d="M66 28l4 4 8-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img src="/public/Splash 1.svg" alt="Graduation Cap"/>
         <div class="float-card top-right">CGPA 4.75 🎓</div>
         <div class="float-card bottom-left">5 Semesters</div>
       </div>`
@@ -33,17 +25,7 @@ const SLIDES = [
     desc: 'Add courses each semester, see your GPA calculated instantly, and watch your CGPA grow with every achievement.',
     illustration: `
       <div class="illustration-circle">
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" class="illustration-icon">
-          <rect x="10" y="55" width="14" height="30" rx="3" fill="#bbf7d0"/>
-          <rect x="28" y="45" width="14" height="40" rx="3" fill="#86efac"/>
-          <rect x="46" y="35" width="14" height="50" rx="3" fill="#4ade80"/>
-          <rect x="64" y="25" width="14" height="60" rx="3" fill="#16a34a"/>
-          <path d="M17 55 L35 45 L53 35 L71 25" stroke="#166534" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="17" cy="55" r="3" fill="#166534"/>
-          <circle cx="35" cy="45" r="3" fill="#166534"/>
-          <circle cx="53" cy="35" r="3" fill="#166534"/>
-          <circle cx="71" cy="25" r="3" fill="#166534"/>
-        </svg>
+        <img src="/public/Splash 4.svg" alt="Illustration 2"/>
         <div class="float-card top-right">↑ 0.3 GPA</div>
         <div class="float-card bottom-left">Best: 4.83</div>
       </div>`
@@ -54,12 +36,7 @@ const SLIDES = [
     desc: 'Use our intelligent predictor to forecast your graduation CGPA and get personalized recommendations to achieve your target class.',
     illustration: `
       <div class="illustration-circle">
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" class="illustration-icon">
-          <circle cx="50" cy="50" r="32" stroke="#bbf7d0" stroke-width="8"/>
-          <circle cx="50" cy="50" r="32" stroke="#16a34a" stroke-width="8" stroke-dasharray="140 60" stroke-linecap="round" transform="rotate(-90 50 50)"/>
-          <text x="50" y="46" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">4.62</text>
-          <text x="50" y="58" text-anchor="middle" font-size="8" fill="#6b7280">Projected</text>
-        </svg>
+        <img src="/public/Splash-3.svg" alt="Illustration 3"/>
         <div class="float-card top-right">First Class 🏆</div>
         <div class="float-card bottom-left">3 sems left</div>
       </div>`
@@ -139,7 +116,9 @@ function renderProfileSetup(container) {
 
       <div class="onboarding-slide">
         <div class="profile-avatar-section">
-          <div class="avatar-circle" id="avatar-preview">👤</div>
+          <div class="avatar-circle" id="avatar-preview">
+          <img src="/public/Profile-setup.svg" alt="Illustration 2"/>
+          </div>
           <p class="avatar-name" id="avatar-name-preview">Your Name</p>
         </div>
 
